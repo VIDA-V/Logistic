@@ -7,7 +7,7 @@ output: html_document
 
 We want to split our data into a training and a test sample for predicting survival of the Titanic. There are two sampling strategies we'll consider here. 
 
-```{r getdatasetup,include=FALSE}
+```{r getdatasetup2,include=FALSE}
 library(RSQLite)
 titanicdb<-dbConnect(SQLite(),dbname="../data-raw/titanic.sqlite")
 ```
