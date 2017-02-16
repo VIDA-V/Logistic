@@ -7,8 +7,14 @@ output: html_document
 
 We want to split our data into a training and a test sample for predicting survival of the Titanic. There are two sampling strategies we'll consider here. 
 
+```{r getdatasetup,include=FALSE}
+library(RSQLite)
+titanicdb<-dbConnect(SQLite(),dbname="../data-raw/titanic.sqlite")
+```
+
 ## Random sample
 ```{r usingsample}
+titanic_all<-dbReadTable(titanicdb, "titanic")
 n_titanic_all<-nrow(titanic_all)
 prop_train<-0.7
 n_train<-floor(prop_train * n_titanic_all)
