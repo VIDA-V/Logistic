@@ -40,7 +40,7 @@ Package: RSQLite
 Source: CRAN
 Version: 1.1-2
 Hash: 124177a480ba0335eb30ed3878971bf8
-Requires: Rcpp, BH, DBI, memoise, plogr
+Requires: BH, DBI, Rcpp, memoise, plogr
 
 Package: Rcpp
 Source: CRAN
@@ -128,6 +128,11 @@ Version: 1.4.3
 Hash: cd53ef4cf29dc59ce3f8c5c1af735fd1
 Requires: iterators
 
+Package: formatR
+Source: CRAN
+Version: 1.4
+Hash: b2a47a2b91737978cf50ba95825a9cd1
+
 Package: ggplot2
 Source: CRAN
 Version: 2.2.1
@@ -164,7 +169,7 @@ Package: knitr
 Source: CRAN
 Version: 1.15.1
 Hash: eed7437e2b614c9e3923b7932b16ac97
-Requires: digest, stringr, evaluate, highr, markdown, yaml
+Requires: digest, evaluate, highr, markdown, stringr, yaml
 
 Package: labeling
 Source: CRAN
